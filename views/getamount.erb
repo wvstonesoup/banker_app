@@ -1,7 +1,7 @@
 Hello <%= name %>. How much change do you need? Remember we can only change up to ten dollars per transaction.
 <form method = "post" action = "amount">
 	<input type = "number" max = 10 min = 1 name = "user_amt">
-	<input type = "text" name = "user_name" value = <%= name %> hidden>
 	Dollars
+	<input type = "hidden" name = "user_name" value = <%= name %>
 	<input type = "submit">
 </form>

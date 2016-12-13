@@ -1,0 +1,6 @@
+Thank you, <%= name %>. Please enter the amount you are submitting up to one hundred dollars, and I will calculate your change.
+<form method = "post" action = "tender"> Amount Tendered $
+	<input type="number" max = 100 min = 1  name = "user_tndr_dollars"> .
+	<input type="number" max = 99 min = 0 name = "user_tndr_cents">
+	<input type = "hidden" name = "user_first_name" value = <%= name %>
+</form>

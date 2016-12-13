@@ -1,0 +1,20 @@
+	Okay <%= name %>. I think we can give you <%= amount %> dollars in change. You also said you need to make a payment on your account. Please enter the amount you want to pay:
+
+<form method = "post" action = "payment">
+$
+	<input type = "number" max = 100 min = 1 name = "pymnt_dollars">
+. 	
+	<input type="number" max = 99 min = 0 name="pymnt_cents">
+
+	and the amount tendered: 
+$
+	<input type = "number" max = 100 min = 1 name = "tndr_dollars">
+.
+	<input type="number" max = 99 min = 0 name="tndr_cents">
+	<input type = "submit">
+	<input type="hidden" name="user_name"  	value = <%= name %>
+</form>
+
+
+
+

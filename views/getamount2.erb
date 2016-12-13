@@ -1,0 +1,7 @@
+Hello <%= name %>. Please enter the amount you would like to pay below. up to one hundred dollars.
+<form method = "post" action = "amount2"> Payment $
+	<input type = "number" max = 100 min = 1 name = "user_pymnt_dollars"> .
+	<input type="number" max = 99 min = 0 name = "user_pymnt_cents">
+	<input type = "submit">
+	<input type = "hidden" name = "user_first_name" value = <%= name %>
+</form>
